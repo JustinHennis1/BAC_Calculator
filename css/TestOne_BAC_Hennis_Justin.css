@@ -1,0 +1,110 @@
+body {
+	background-color: #322;
+	padding: 0;
+	margin: 0;
+}
+h1 {
+	font-family: "Garamond";
+	color: white;
+	background-color: #800000;
+	border-radius: 5px;
+	padding: 10vh;
+	padding-left: 2vh;
+	text-align: center;
+	display: flex-inline;
+	margin:0;
+	justify-content: space-evenly;
+	text-shadow: 2px 2px black;
+}
+@media screen and (max-width: 920px) {
+	img {
+		display: none; /* Hide images */
+	}
+}
+h2, pre {
+	color: ivory;
+	text-align: center;
+}
+div #header{
+	text-align: center;
+}
+
+#row {
+	justify-content: center;
+	display: flex;
+	padding: 10vh;
+
+}
+
+#boxedheader {
+	padding-right: 32vh;
+	padding-left: 32vh;
+	border: 9px groove black;
+	border-radius: 20px;
+	background-color: brown;
+
+	
+}
+#break {
+	background-color: maroon;
+	height: 10px;
+}
+button{
+	background-color: #800000;
+	color: white;
+	height: 10%;
+	width: 20%;
+	
+}
+button:hover{
+	background-color: white;
+	text-decoration: underline;
+	
+	
+	color: #800000;
+
+}
+#reset{
+	display: flex;
+	justify-content: center;
+}
+#resetinner{
+	padding-left: 5vh;
+	padding-right: 5vh;
+	padding-top: 3vh;
+	padding-bottom: 3vh;
+}
+input, option, select{
+	padding: 5px;
+	color: white;
+	font-size: 3vh;
+	background-color: #800000;
+	font-family: "Garamond";
+	border-radius: 20px;
+}
+.partAQs{
+	display: flex; 
+	justify-content: space-around; 
+	align-items: center;
+	background-color: Ivory;
+	border: 10px groove #800;
+	border-radius: 50px;
+	padding:5vh;
+	font-size: 3vh;
+}
+::placeholder {
+        color: #FFF;
+ }
+ label{
+	 padding-right: 2vh;
+ }
+ form{
+	 padding-left: 2vh;
+ }
+#debugOutput{
+	color: ivory;
+}
+#debugOutput img {
+    display: block; /* Ensures the image takes up the full width of its container */
+    margin: 0 auto; /* Centers the image horizontally */
+}

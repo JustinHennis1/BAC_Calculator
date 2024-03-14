@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="../js/TestOne_BAC_Hennis_Justin.js"></script>
+	<link rel="stylesheet" href="../css/TestOne_BAC_Hennis_Justin.css"></link>
+	<title>Blood & Alcohol</title>
+</head>
+
+<body>
+	<h1 id="header">
+	<img style="height: 12vh;"src="../TestOne_BAC_Images/shinywhiskey.gif"></img>
+	<img  style="height: 15vh;" src="../TestOne_BAC_Images/pouronwine.gif"></img>
+	<img  style="height: 15vh;" src="../TestOne_BAC_Images/beercheer.gif"></img>
+	
+	
+	<span style="padding: 3vh;">
+	We Got Your BAC
+	</span>
+	
+	
+	
+	<img style="height: 12vh;"src="../TestOne_BAC_Images/shinywhiskey.gif"></img>
+	<img  style="height: 15vh;" src="../TestOne_BAC_Images/pouronwine.gif"></img>
+	<img  style="height: 15vh;" src="../TestOne_BAC_Images/beercheer.gif"></img>
+	
+	
+	</h1>
+	
+	
+	<div id="break"></div>
+	<br></br>
+	
+	<div id="row">
+	
+	
+		<div id="partA"> <!-- Part A -->
+			<div id="boxedheader">
+				<h2>Part A</h2>
+			</div>
+			<br>
+			<div class="partAQs">
+				<h4>What Kind Of Drink Did You Have?</h4>
+				<select id="drinkType" required>
+					<option value="" disabled selected hidden>Drink</option>
+					<option value="beer">Beer</option>
+					<option value="lite">Malt Liquour</option>
+					<option value="wine">Wine</option>
+					<option value="hard">Hard Liquour</option>
+				</select>
+			</div>
+			<br>
+			<div class="partAQs">
+				<h4>How Much Alcohol Did You Drink?</h4>
+					  <form id="myform">
+						<input type="number" id="ounces" name="ounces" min="1" placeholder="Number of Ounces" required>
+					  </form>
+			</div>
+			<br>
+			<div class="partAQs">
+			<h4>Male/Female?</h4>
+					<select id="gender"required>
+						<option value="" disabled selected hidden>Gender</option>
+						<option value="male">Male</option>
+						<option value="female">Female</option>
+					</select>
+			</div>
+			<br>
+			<button onclick="showPartB()"><strong>Next</strong></button>
+		</div><!-- Part A-->
+		
+		<div id="partB" style="display: none;"> <!-- Part B -->
+			<div id="boxedheader"> 
+				<h2>Part B</h2>
+			</div>
+			<br>
+			<div class="partAQs">
+				<h4>What do you weigh?</h4>
+						<form id="weightf">
+							<label for="weight">Enter Weight:</label>
+							<input type="number" id="weight" name="weight" min="1" placeholder="Enter Weight Here" required>
+						</form>
+						
+						<select id="metric"> <!-- default pounds -->
+							<option value="lbs">lbs</option>
+							<option value="kg">kgs</option>
+						</select>
+			</div>
+			<div class="partAQs">
+				<h4>How long ago did you have your last drink?</h4>
+				
+						<form id="hrsf">			
+							<input type="number" id="hrs" name="hrs" min="0" max="72" placeholder="##" required style="width: 6vh;">
+							<label for="hrs">hrs</label>
+						</form >
+						<form id="minf">				
+							<input type="number" id="min" name="min" min="0" max="59" placeholder="##" required style="width: 6vh;">
+							<label for="min">min</label>
+						</form>
+						<form id="secf">
+							<input type="number" id="sec" name="sec" min="0" max="59" placeholder="##" required style="width: 6vh;">
+							<label for="sec">sec</label>
+						</form>
+						
+						
+			</div>
+			<br>
+			<button onclick="processInput()">Submit</button>
+		</div> <!-- Part B -->
+		
+		<br>
+		
+		<div id="results" style="display: none;">
+			<div id="boxedheader"> 
+				<h2>Your Results!!!</h2>
+			</div>
+			<div id="debugOutput"></div>
+		</div>
+	
+	</div>
+		<div id="reset">
+			<button id="resetinner" type="button" onclick="resetForm()">Reset Form</button>
+		</div>
+		<div style="height: 20vh;"></div>
+		
+		
+		
+	
+	
+</body>
+
+</html>
